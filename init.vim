@@ -60,5 +60,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " emmet
   Plug 'mattn/emmet-vim'
+  " cool themes
+  Plug 'joshdick/onedark.vim'
+  Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
+
+" theme
+colorscheme onedark
