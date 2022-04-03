@@ -63,8 +63,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " cool themes
   Plug 'joshdick/onedark.vim'
   Plug 'tomasiser/vim-code-dark'
+  Plug 'morhetz/gruvbox'
 
 call plug#end()
 
 " theme
-colorscheme onedark
+colorscheme gruvbox
