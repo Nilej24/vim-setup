@@ -68,4 +68,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 call plug#end()
 
 " theme
-colorscheme gruvbox
+colorscheme onedark
+hi Normal guibg=NONE ctermbg=NONE
