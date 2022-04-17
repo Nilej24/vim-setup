@@ -64,6 +64,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'joshdick/onedark.vim'
   Plug 'tomasiser/vim-code-dark'
   Plug 'morhetz/gruvbox'
+  " prettier plugin
+  Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+  " linter plugin
+  Plug 'dense-analysis/ale'
 
 call plug#end()
 
