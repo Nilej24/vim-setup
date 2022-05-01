@@ -71,6 +71,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 call plug#end()
 
+" fixes lsp
+let g:ale_disable_lsp = 1
+
 " theme
 colorscheme onedark
 hi Normal guibg=NONE ctermbg=NONE
