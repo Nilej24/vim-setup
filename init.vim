@@ -51,6 +51,7 @@ nnoremap <S-TAB> :bprevious<CR>
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key=','
+nnoremap <C-p> :<C-u>FZF<CR> 
 
 " plugins
 call plug#begin('~/.config/nvim/autoload/plugged')
@@ -69,6 +70,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
   " linter plugin
   Plug 'dense-analysis/ale'
+  " file finder
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  Plug 'airblade/vim-rooter'
 
 call plug#end()
 
