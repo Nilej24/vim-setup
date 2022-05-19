@@ -14,6 +14,7 @@ set autoindent
 set number
 set cursorline
 set clipboard=unnamedplus
+set relativenumber
 
 " other stuff
 set hidden
@@ -48,7 +49,7 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
 nnoremap <silent> K :call <SID>show_documentation()<CR>
-let g:user_emmet_mode='n'
+let g:user_emmet_mode='nv'
 let g:user_emmet_leader_key=','
 
 " plugins
